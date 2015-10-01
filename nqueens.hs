@@ -40,6 +40,6 @@ addQueen n col discard queens
         
 
 solve :: Int -> Maybe([Point])
-solve n = addQueen n 1 Set.empty $ Just []
+solve n = fmap reverse $ addQueen n 1 Set.empty $ Just []
 
 
