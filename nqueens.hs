@@ -1,3 +1,5 @@
+module NQueens where
+
 import qualified Data.Set as Set 
 data Point = Point Int Int deriving (Show, Eq, Ord)
 
